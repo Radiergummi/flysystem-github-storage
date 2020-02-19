@@ -1,5 +1,9 @@
 GitHub Adapter for Flysystem
 ============================
+[![Latest Version](https://img.shields.io/packagist/v/radiergummi/flysystem-github-storage.svg?style=flat-square)](https://packagist.org/packages/radiergummi/flysystem-github-storage)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Total Downloads](https://img.shields.io/packagist/dt/radiergummi/flysystem-github-storage.svg?style=flat-square)](https://packagist.org/packages/radiergummi/flysystem-github-storage)
+
 This is a GitHub adapter [Flysystem](https://github.com/thephpleague/flysystem). It allows you to use a GitHub 
 repository as a storage backend for Flysystem.  
 It uses the [Contents API](https://developer.github.com/v3/repos/contents/) of the GitHub API, version 3.
