@@ -22,20 +22,25 @@ Usage
 -----
 To use the GitHub storage with Flysystem, you'll need to create a client:
 ```php
+use Radiergummi\FlysystemGitHub\Client;
+
 $token = getenv('YOUR_GITHUB_ACCESS_TOKEN');
 $repository = getenv('YOUR_GITHUB_REPOSITORY')
-
 $client = new Client($token, $repository);
 ```
 
 You can then pass that client to the adapter:
 ```php
-use Radiergummi\FlysystemGitHub\GitHubAdapter;$adapter = new GitHubAdapter($client);
+use Radiergummi\FlysystemGitHub\GitHubAdapter;
+
+$adapter = new GitHubAdapter($client);
 ```
 
 ...and finally, create a Filesystem instance:
 ```php
-use League\Flysystem\Filesystem;$filesystem = new Filesystem($adapter);
+use League\Flysystem\Filesystem;
+
+$filesystem = new Filesystem($adapter);
 ```
 
 Check out the [Flysystem documentation](https://flysystem.thephpleague.com/api) for filesystem usage information.
